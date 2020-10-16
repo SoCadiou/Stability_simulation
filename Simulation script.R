@@ -470,7 +470,7 @@ ewas <-
     if (is.null(data_Y) == TRUE |
         is.null(data_Xs) == TRUE |
         !(name_Y %in% colnames(data_Y))) {
-      stop("Données incohérentes entre elles")
+      stop("DonnÃ©es incohÃ©rentes entre elles")
     }
     
     ##applying univariate regression for each exposure outcome association
@@ -743,13 +743,13 @@ lasso_stab_Meinshausen <-
       data_Xs <- data_Xs[rownames(data_Y), ]
     }
     if (is.null(data_Y)) {
-      stop("Données incohérentes entre elles _ Y")
+      stop("DonnÃ©es incohÃ©rentes entre elles _ Y")
     }
     if (is.null(data_Xs)) {
-      stop("Données incohérentes entre elles _ Xs")
+      stop("DonnÃ©es incohÃ©rentes entre elles _ Xs")
     }
     if (!(name_Y %in% colnames(data_Y))) {
-      stop("Données incohérentes entre elles _ nom Y")
+      stop("DonnÃ©es incohÃ©rentes entre elles _ nom Y")
     }
     data_Y <- data.matrix(data_Y)
     data_Xs <- data.matrix(data_Xs)
@@ -874,13 +874,13 @@ lasso_stab_Meinshausen2 <-
       data_Xs <- data_Xs[rownames(data_Y), ]
     }
     if (is.null(data_Y)) {
-      stop("Données incohérentes entre elles _ Y")
+      stop("DonnÃ©es incohÃ©rentes entre elles _ Y")
     }
     if (is.null(data_Xs)) {
-      stop("Données incohérentes entre elles _ Xs")
+      stop("DonnÃ©es incohÃ©rentes entre elles _ Xs")
     }
     if (!(name_Y %in% colnames(data_Y))) {
-      stop("Données incohérentes entre elles _ nom Y")
+      stop("DonnÃ©es incohÃ©rentes entre elles _ nom Y")
     }
     data_Y <- data.matrix(data_Y)
     data_Xs <- data.matrix(data_Xs)
@@ -1218,13 +1218,13 @@ lasso_moy_Meinshausen <-
       data_Xs <- data_Xs[rownames(data_Y), ]
     }
     if (is.null(data_Y)) {
-      stop("Données incohérentes entre elles _ Y")
+      stop("DonnÃ©es incohÃ©rentes entre elles _ Y")
     }
     if (is.null(data_Xs)) {
-      stop("Données incohérentes entre elles _ Xs")
+      stop("DonnÃ©es incohÃ©rentes entre elles _ Xs")
     }
     if (!(name_Y %in% colnames(data_Y))) {
-      stop("Données incohérentes entre elles _ nom Y")
+      stop("DonnÃ©es incohÃ©rentes entre elles _ nom Y")
     }
     ##initialization
     data_Y <- data.matrix(data_Y)
@@ -1733,7 +1733,7 @@ f0 <- function(x) {
     end_time_meth <- Sys.time()
     predDSA[[2]] <-
       as.numeric(difftime(end_time_meth, start_time_meth,  units = c("secs")))
-    print("DSA effectué")
+    print("DSA effectuÃ©")
     ##combining results of the different methods for this iteration
     pred_iter <-
       c(
